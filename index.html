@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Log</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app-container">
+      <h1>Book Logs</h1>
+
+      <div id="book-container">
+        <h2>Add Book</h2>
+        <input type="text" id="book-title" placeholder="Book Title" />
+        <input type="text" id="author-name" placeholder="Author Name" />
+        <input
+          type="number"
+          id="book-rating"
+          min="1"
+          max="5"
+          placeholder="Rating (1-5)"
+        />
+        <textarea id="book-note" placeholder="Your Note"></textarea>
+
+        <button id="add-book-btn">Add Book</button>
+        <button id="update-book-btn" style="display: none">Update Book</button>
+        <button id="cancel-edit-btn" style="display: none">Cancel Edit</button>
+      </div>
+
+      <h2>Your Books</h2>
+      <input type="text" id="search-author" placeholder="Search by Author" />
+      <ul id="book-list"></ul>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
